@@ -6,17 +6,14 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
 @Data
 @Builder
-@Document(collection = "person")
+@Document(collection = "contacts")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Person {
+public class Contact {
     @Id
-    private String personId;
+    private String id; // or @GeneratedValue for auto-generated IDs, if needed
     private String firstName;
     private String lastName;
-    private Integer age;
-    private List<String> hobbies;
-    private List<Address> addresses;
+    private String phoneNumber;
 }
