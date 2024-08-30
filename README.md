@@ -32,4 +32,4 @@ The **Trainer Contact Sync Backend** is a RESTful API service that provides cont
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/utkarshxf/trainer-contact-sync-backend.git
+   git clone https://github.com/utkarshxf/backend-contactSync
